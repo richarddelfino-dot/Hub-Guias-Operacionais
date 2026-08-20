@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxMDA0NjQ5MjY2Njk4OTI0Mzk1NiIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjX2MyOTZhZjQ2ZDg3MGFmYjBfZ3VpYV9sYW5jYW1lbnRvX25mX2NkLmh0bWwtNDAifSwiZXhwIjoxNzg3MTYzNzcwLCJpYXQiOjE3ODcxNjAxNzAsImFsZyI6IlJTMjU2In0.gLFLJo1KHwKNtK2GZGkCI0JgYUj3aZ9WGEKW5XBh8Z_SgexKxoapYEbt69EyJ3Ndx7lQY8AFjN2LdgNV_G6a92_2yG57bzEmKALLCQSEczxGx18EDtwKc6jIjEwgtAbc8fd4lXYidieS43GVxB05W5StcPgunpKdLG0FvDafJ1n6dfdGqb6gqYB_KVh48lx_V-2Eeb7R05Lij4wlDzdP-W-fNzca8WoMTcBzUWZRG1an-5TL_wJ7uFsUSILllH1Pzjh2yt9WlVuEw1C27TlUIxruWkZ-pNClL8av1is2Sjlk30gB4dnW5cty5g3Uij5zU1skgsh5QKOim3Oa080nnw","c_c296af46d870afb0_guia_lancamento_nf_cd.html-40")</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var n=l(this);
+function p(a,b){if(b)a:{var d=n;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&h(d,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function t(a){return r(a())}
+p("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});p("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function u(a,b){var d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);var c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var v=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let x=null;function y(a={}){return x?x:a.m?x=a.m:x=w(window.getComputedStyle(document.documentElement))}function z(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function A(a,b={}){var d;if(!(d=b.width)){d=z(a,"border-left-width");var c=z(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=z(a,"border-top-width"),c=z(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function B(a){return new Promise((b,d)=>{var c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function D(a,b,d){return t(function*(){var c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return C(c)})}
+var E=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||E(a,b)};function F(a,b){return y(b).map(d=>{var c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function G(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{b.className=`${b.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=F(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function H(a){return a.search(/^(data:)/)!==-1}function I(a,b,d){return t(function*(){var c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);var e=yield c.blob();return new Promise((f,g)=>{var k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(d({u:c,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const J={};function K(a,b,d){var c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function L(a,b,d){return t(function*(){var c=K(a,b,d.D);if(J[c]!=null)return J[c];d.v&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield I(a,d.j,({u:g,result:k})=>{b||(b=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=d.C||""}return J[c]=e})};const M={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",A:"application/vnd.ms-fontobject",I:"image/png",G:"image/jpeg",F:"image/jpeg",B:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function N(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function O(a){return t(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):B(b)})}function aa(a,b){return t(function*(){if(a.currentSrc){var d=document.createElement("canvas");let c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return B(d)}d=a.poster;d=yield L(d,M[N(d).toLowerCase()]||"",b);return B(d)})}
+function ba(a,b){return t(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield P(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ca(a,b){return t(function*(){return E(a,HTMLCanvasElement)?O(a):E(a,HTMLVideoElement)?aa(a,b):E(a,HTMLIFrameElement)?ba(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function da(a,b,d){return t(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||E(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>P(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function ea(a,b,d){var c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):y(d).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function fa(a,b){E(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function ha(a,b){return t(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield P(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function P(a,b,d){return t(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ca(c,b)).then(c=>da(a,c,b)).then(c=>{E(c,Element)&&(ea(a,c,b),G(a,c,":before",b),G(a,c,":after",b),E(a,HTMLTextAreaElement)&&(c.textContent=a.value),E(a,HTMLInputElement)&&c.setAttribute("value",a.value),fa(a,c));return c}).then(c=>ha(c,b)):null})};const Q=/url\((['"]?)([^'"]+?)\1\)/g,ia=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,ja=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function ka(a){var b=[];a.replace(Q,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!H(d))}
+function la(a,b,d,c){return t(function*(){try{let e=d?(new URL(b,d||void 0)).toString():b,f;f=yield L(e,M[N(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function ma(a,{J:b}){return b?a.replace(ja,d=>{for(;;){let [c,,e]=ia.exec(d)||[];if(!e)return"";if(e===b)return`src: ${c};`}}):a}
+function R(a,b,d){return t(function*(){if(a.search(Q)===-1)return a;var c=ma(a,d);return ka(c).reduce((e,f)=>e.then(g=>la(g,f,b,d)),Promise.resolve(c))})};function S(a,b,d){return t(function*(){var c,e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield R(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function na(a,b){return t(function*(){(yield S("background",a,b))||(yield S("background-image",a,b));(yield S("mask",a,b))||(yield S("-webkit-mask",a,b))||(yield S("mask-image",a,b))||(yield S("-webkit-mask-image",a,b))})}
+function oa(a,b){return t(function*(){var d=E(a,HTMLImageElement);if(d&&!H(a.src)||E(a,SVGImageElement)&&!H(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield L(c,M[N(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.o?(...k)=>{try{f(b.o(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function pa(a,b){return t(function*(){var d=w(a.childNodes).map(c=>T(c,b));yield Promise.all(d).then(()=>a)})}function T(a,b){return t(function*(){E(a,Element)&&(yield na(a,b),yield oa(a,b),yield pa(a,b))})};const U={};function V(a){return t(function*(){var b=U[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return U[a]=b})}function W(a,b){return t(function*(){var d=a.cssText,c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){var g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return I(g,b.j,({result:k})=>{d=d.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>d)})}
+function X(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function qa(a,b){return t(function*(){var d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=V(f.href).then(m=>W(m,b)).then(m=>X(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Da){}})).catch(()=>{});c.push(f)}})}catch(f){let g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&c.push(V(e.href).then(k=>W(k,b)).then(k=>X(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function ra(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(Q)!==-1)}function sa(a,b){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=w(a.ownerDocument.styleSheets);d=yield qa(d,b);return ra(d)})}
+function ta(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var d=new Set;b(a);return d}function ua(a,b){return t(function*(){var d=yield sa(a,b),c=ta(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>R(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function va(a,b){return t(function*(){var d=b.l!=null?b.l:b.L?null:yield ua(a,b);if(d){let c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function wa(a,b={}){return t(function*(){var {width:d,height:c}=A(a,b),e=yield P(a,b,!0);yield va(e,b);yield T(e,b);u(e,b);return yield D(e,d,c)})}
+function xa(a,b={}){return t(function*(){var {width:d,height:c}=A(a,b),e=yield wa(a,b);e=yield B(e);var f=document.createElement("canvas"),g=f.getContext("2d"),k=b.H||window.devicePixelRatio||1,m=b.i||d,q=b.h||c;f.width=m*k;f.height=q*k;!b.K&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${m}`;f.style.height=`${q}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function ya(a,b={}){return t(function*(){return(yield xa(a,b)).toDataURL()})};const za=["gemini.google.com","corp.google.com","proxy.googlers.com"];function Y(){return document.body.querySelectorAll('[class*="animate"]').length>0}function Z(a){return t(function*(){try{return yield ya(a,{i:a.offsetWidth,h:a.offsetHeight})}catch(d){var b=a.offsetHeight;let c=document.createElement("canvas");c.width=a.offsetWidth;c.height=b;return c.toDataURL("image/png")}})}
+function Aa(){return t(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ba(a){return t(function*(){var b=document.body;if(Y()){var d=yield Aa();b=d;document.body.appendChild(d)}d=yield Z(b);Y()&&document.body.removeChild(b);window.parent.postMessage({type:"SEND_SCREENSHOT",image:d,topOffset:document.documentElement.scrollTop},a.origin)})}function Ca(a){return t(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}
+window.addEventListener("message",a=>t(function*(){if(za.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ba(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ca(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.j=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.i="";var l=0,t=null,r=null,q=[],F=new TextEncoder,G=new TextDecoder;
+c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*16|0;return(f===
+"x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;(g=t)==null||g.postMessage(a)}};
+Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Guia de Lançamento de NF - CD Próprio (XML) | market4u</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --m4u-bg: #030805;
+            --m4u-card-bg: #06120A;
+            --m4u-inner-card: #0C1E12;
+            --m4u-border: #1A3E26;
+            --m4u-footer: #050E08;
+            --m4u-lime: #8CDB00;
+            --m4u-emerald: #10B981;
+            --m4u-emerald-dark: #14331E;
+            --m4u-red: #E30613;
+            --m4u-red-light: #FF5252;
+            --m4u-amber: #F59E0B;
+            --m4u-text: #FFFFFF;
+            --m4u-text-sub: #A2B8AC;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            background-color: var(--m4u-bg);
+            color: var(--m4u-text);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .font-bebas {
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        /* Gradientes e Cards */
+        .slide-section {
+            background: radial-gradient(circle at 50% 0%, #0F2A18 0%, #06120A 80%);
+            border: 1px solid var(--m4u-border);
+        }
+
+        .bg-inner-card {
+            background-color: var(--m4u-inner-card);
+            border: 1px solid var(--m4u-border);
+        }
+
+        .border-lime-highlight {
+            border-color: var(--m4u-lime);
+        }
+
+        .text-lime-m4u {
+            color: var(--m4u-lime);
+        }
+
+        .bg-lime-m4u {
+            background-color: var(--m4u-lime);
+        }
+
+        /* Sombra e Brilhos Neon */
+        .glow-lime {
+            box-shadow: 0 0 15px rgba(140, 219, 0, 0.2);
+        }
+
+        .glow-lime-hover:hover {
+            box-shadow: 0 0 22px rgba(140, 219, 0, 0.35);
+            transform: translateY(-1px);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #030805;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1A3E26;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8CDB00;
+        }
+
+        /* Modal Blur Overlay */
+        .modal-overlay {
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            background-color: rgba(3, 8, 5, 0.88);
+        }
+
+        /* Otimizações Responsivas */
+        @media (max-width: 640px) {
+            .slide-section {
+                padding: 1.25rem 1rem !important;
+                border-radius: 1rem !important;
+            }
+            .step-badge-header {
+                font-size: 0.7rem !important;
+            }
+            select {
+                font-size: 0.8rem !important;
+            }
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.-bottom-20{bottom:-5rem}.-right-20{right:-5rem}.left-0{left:0px}.right-0{right:0px}.right-2\.5{right:0.625rem}.top-0{top:0px}.top-1\/2{top:50%}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.my-2{margin-top:0.5rem;margin-bottom:0.5rem}.mb-0\.5{margin-bottom:0.125rem}.mb-1{margin-bottom:0.25rem}.mb-1\.5{margin-bottom:0.375rem}.mb-2\.5{margin-bottom:0.625rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.ml-1{margin-left:0.25rem}.mr-1{margin-right:0.25rem}.mt-0\.5{margin-top:0.125rem}.mt-12{margin-top:3rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-64{height:16rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-12{height:3rem}.h-4{height:1rem}.max-h-\[90vh\]{max-height:90vh}.min-h-\[38px\]{min-height:38px}.min-h-\[42px\]{min-height:42px}.min-h-\[46px\]{min-height:46px}.min-h-\[70vh\]{min-height:70vh}.min-h-screen{min-height:100vh}.min-h-\[44px\]{min-height:44px}.w-10{width:2.5rem}.w-64{width:16rem}.w-9{width:2.25rem}.w-\[38px\]{width:38px}.w-full{width:100%}.w-12{width:3rem}.w-4{width:1rem}.w-8{width:2rem}.w-max{width:max-content}.min-w-\[2\.25rem\]{min-width:2.25rem}.max-w-3xl{max-width:48rem}.max-w-6xl{max-width:72rem}.max-w-7xl{max-width:80rem}.max-w-full{max-width:100%}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.appearance-none{-webkit-appearance:none;appearance:none}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-3\.5{gap:0.875rem}.gap-4{gap:1rem}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-12 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(3rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(3rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.space-y-0\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.125rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.125rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.scroll-smooth{scroll-behavior:smooth}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.break-words{overflow-wrap:break-word}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-l-4{border-left-width:4px}.border-t{border-top-width:1px}.border-\[\#10B981\]{--tw-border-opacity:1;border-color:rgb(16 185 129 / var(--tw-border-opacity, 1))}.border-\[\#1A3E26\]{--tw-border-opacity:1;border-color:rgb(26 62 38 / var(--tw-border-opacity, 1))}.border-\[\#8CDB00\]{--tw-border-opacity:1;border-color:rgb(140 219 0 / var(--tw-border-opacity, 1))}.border-\[\#E30613\]{--tw-border-opacity:1;border-color:rgb(227 6 19 / var(--tw-border-opacity, 1))}.border-l-\[\#8CDB00\]{--tw-border-opacity:1;border-left-color:rgb(140 219 0 / var(--tw-border-opacity, 1))}.bg-\[\#050E08\]{--tw-bg-opacity:1;background-color:rgb(5 14 8 / var(--tw-bg-opacity, 1))}.bg-\[\#050E08\]\/95{background-color:rgb(5 14 8 / 0.95)}.bg-\[\#0C1E12\]{--tw-bg-opacity:1;background-color:rgb(12 30 18 / var(--tw-bg-opacity, 1))}.bg-\[\#14331E\]{--tw-bg-opacity:1;background-color:rgb(20 51 30 / var(--tw-bg-opacity, 1))}.bg-\[\#14331E\]\/60{background-color:rgb(20 51 30 / 0.6)}.bg-\[\#8CDB00\]{--tw-bg-opacity:1;background-color:rgb(140 219 0 / var(--tw-bg-opacity, 1))}.bg-\[\#8CDB00\]\/10{background-color:rgb(140 219 0 / 0.1)}.bg-\[\#E30613\]\/10{background-color:rgb(227 6 19 / 0.1)}.bg-\[\#E30613\]\/20{background-color:rgb(227 6 19 / 0.2)}.bg-\[\#030805\]{--tw-bg-opacity:1;background-color:rgb(3 8 5 / var(--tw-bg-opacity, 1))}.bg-\[\#06120A\]{--tw-bg-opacity:1;background-color:rgb(6 18 10 / var(--tw-bg-opacity, 1))}.bg-\[\#8CDB00\]\/20{background-color:rgb(140 219 0 / 0.2)}.bg-\[\#F59E0B\]{--tw-bg-opacity:1;background-color:rgb(245 158 11 / var(--tw-bg-opacity, 1))}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.from-\[\#0C1E12\]{--tw-gradient-from:#0C1E12 var(--tw-gradient-from-position);--tw-gradient-to:rgb(12 30 18 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-\[\#14331E\]{--tw-gradient-to:#14331E var(--tw-gradient-to-position)}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.pb-3\.5{padding-bottom:0.875rem}.pl-3{padding-left:0.75rem}.pr-7{padding-right:1.75rem}.pt-28{padding-top:7rem}.pt-4{padding-top:1rem}.pb-2\.5{padding-bottom:0.625rem}.pb-3{padding-bottom:0.75rem}.pt-1{padding-top:0.25rem}.pt-2{padding-top:0.5rem}.text-left{text-align:left}.text-center{text-align:center}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.tracking-wide{letter-spacing:0.025em}.text-\[\#030805\]{--tw-text-opacity:1;color:rgb(3 8 5 / var(--tw-text-opacity, 1))}.text-\[\#8CDB00\]{--tw-text-opacity:1;color:rgb(140 219 0 / var(--tw-text-opacity, 1))}.text-\[\#A2B8AC\]{--tw-text-opacity:1;color:rgb(162 184 172 / var(--tw-text-opacity, 1))}.text-\[\#D1E0D7\]{--tw-text-opacity:1;color:rgb(209 224 215 / var(--tw-text-opacity, 1))}.text-\[\#F0F7F2\]{--tw-text-opacity:1;color:rgb(240 247 242 / var(--tw-text-opacity, 1))}.text-\[\#FF5252\]{--tw-text-opacity:1;color:rgb(255 82 82 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-\[\#E30613\]{--tw-text-opacity:1;color:rgb(227 6 19 / var(--tw-text-opacity, 1))}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-sky-400{--tw-text-opacity:1;color:rgb(56 189 248 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.decoration-\[\#FF5252\]{-webkit-text-decoration-color:#FF5252;text-decoration-color:#FF5252}.accent-\[\#8CDB00\]{accent-color:#8CDB00}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:border-\[\#8CDB00\]:hover{--tw-border-opacity:1;border-color:rgb(140 219 0 / var(--tw-border-opacity, 1))}.hover\:bg-\[\#a2fb00\]:hover{--tw-bg-opacity:1;background-color:rgb(162 251 0 / var(--tw-bg-opacity, 1))}.hover\:text-\[\#8CDB00\]:hover{--tw-text-opacity:1;color:rgb(140 219 0 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.focus\:border-\[\#8CDB00\]:focus{--tw-border-opacity:1;border-color:rgb(140 219 0 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}@media (min-width: 640px){.sm\:col-span-2{grid-column:span 2 / span 2}.sm\:mb-6{margin-bottom:1.5rem}.sm\:flex{display:flex}.sm\:hidden{display:none}.sm\:h-80{height:20rem}.sm\:h-16{height:4rem}.sm\:w-64{width:16rem}.sm\:w-80{width:20rem}.sm\:w-auto{width:auto}.sm\:w-16{width:4rem}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-center{justify-content:center}.sm\:gap-2{gap:0.5rem}.sm\:gap-4{gap:1rem}.sm\:gap-6{gap:1.5rem}.sm\:space-y-16 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(4rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(4rem * var(--tw-space-y-reverse))}.sm\:p-4{padding:1rem}.sm\:p-5{padding:1.25rem}.sm\:p-6{padding:1.5rem}.sm\:p-8{padding:2rem}.sm\:px-4{padding-left:1rem;padding-right:1rem}.sm\:py-6{padding-top:1.5rem;padding-bottom:1.5rem}.sm\:pt-24{padding-top:6rem}.sm\:text-left{text-align:left}.sm\:text-6xl{font-size:3.75rem;line-height:1}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}.sm\:text-xs{font-size:0.75rem;line-height:1rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:leading-none{line-height:1}}@media (min-width: 768px){.md\:col-span-1{grid-column:span 1 / span 1}.md\:col-span-3{grid-column:span 3 / span 3}.md\:inline{display:inline}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:p-10{padding:2.5rem}.md\:p-8{padding:2rem}.md\:pt-20{padding-top:5rem}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-7xl{font-size:4.5rem;line-height:1}.md\:text-5xl{font-size:3rem;line-height:1}}@media (min-width: 1024px){.lg\:col-span-1{grid-column:span 1 / span 1}.lg\:inline{display:inline}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:text-8xl{font-size:6rem;line-height:1}}@media (min-width: 1280px){.xl\:inline{display:inline}}</style></head>
+<body class="min-h-screen flex flex-col justify-between pt-28 sm:pt-24 md:pt-20">
+
+    <!-- HEADER FIXO DE NAVEGAÇÃO -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#050E08]/95 backdrop-blur-md border-b border-[#1A3E26] px-3 sm:px-4 py-2.5">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2.5">
+            
+            <!-- Logo e Badge -->
+            <div class="w-full sm:w-auto flex items-center justify-between sm:justify-start gap-2">
+                <a href="#slide1" onclick="goToAnchor('#slide1')" class="flex items-center gap-2 text-lg sm:text-xl font-bold tracking-tight text-white focus:outline-none">
+                    <i class="fa-solid fa-store text-lime-m4u"></i>
+                    <span class="font-bold">market<span class="text-lime-m4u">4u</span></span>
+                    <span class="text-[10px] sm:text-xs bg-[#14331E] text-[#A2B8AC] px-2 py-0.5 rounded border border-[#1A3E26] font-medium ml-1">
+                        CD Operacional
+                    </span>
+                </a>
+
+                <!-- Botões Rápidos Mobile -->
+                <div class="flex items-center gap-1.5 sm:hidden">
+                    <button onclick="openModal()" class="min-h-[38px] w-[38px] rounded-lg bg-[#14331E] border border-[#1A3E26] text-white flex items-center justify-center text-sm" title="Visão Geral">
+                        <i class="fa-solid fa-grip text-lime-m4u"></i>
+                    </button>
+                    <button onclick="downloadHTML()" class="min-h-[38px] w-[38px] rounded-lg bg-[#8CDB00] text-[#030805] font-bold flex items-center justify-center text-sm glow-lime" title="Baixar Guia">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Controles do Slide -->
+            <div class="w-full sm:w-auto flex items-center justify-between sm:justify-center gap-1.5 sm:gap-2">
+                <button onclick="navigateSlide(-1)" class="min-h-[42px] px-3 py-2 rounded-lg bg-[#0C1E12] border border-[#1A3E26] text-white hover:border-[#8CDB00] hover:text-[#8CDB00] transition-colors flex items-center justify-center gap-1 font-medium text-xs sm:text-sm flex-shrink-0" title="Slide Anterior">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <span class="hidden md:inline">Anterior</span>
+                </button>
+
+                <!-- Select Dropdown do Index -->
+                <div class="relative flex-1 sm:w-64 max-w-full">
+                    <select id="slideSelect" onchange="goToAnchor(this.value)" class="w-full min-h-[42px] bg-[#0C1E12] border border-[#1A3E26] text-[#8CDB00] text-xs sm:text-sm font-semibold rounded-lg pl-3 pr-7 py-2 focus:outline-none focus:border-[#8CDB00] cursor-pointer appearance-none truncate">
+                        <option value="#slide1">01 / 07 - Capa &amp; Pré-Requisitos</option>
+                        <option value="#slide2">02 / 07 - Etapa 1: Passos 1º a 4º (Acesso)</option>
+                        <option value="#slide3">03 / 07 - Etapa 2: Passos 5º a 10º (Importação XML)</option>
+                        <option value="#slide4">04 / 07 - Etapa 3: Passos 11º a 13º (Financeiro)</option>
+                        <option value="#slide5">05 / 07 - Etapa 4: Passos 14º e 15º (EAN &amp; Estoque)</option>
+                        <option value="#slide6">06 / 07 - Etapa 5: Passos 16º a 18º (Conclusão)</option>
+                        <option value="#slide7">07 / 07 - Resumo &amp; Checklist (1º ao 18º)</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down absolute right-2.5 top-1/2 -translate-y-1/2 text-xs text-[#8CDB00] pointer-events-none"></i>
+                </div>
+
+                <button onclick="navigateSlide(1)" class="min-h-[42px] px-3 py-2 rounded-lg bg-[#0C1E12] border border-[#1A3E26] text-white hover:border-[#8CDB00] hover:text-[#8CDB00] transition-colors flex items-center justify-center gap-1 font-medium text-xs sm:text-sm flex-shrink-0" title="Próximo Slide">
+                    <span class="hidden md:inline">Próximo</span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Ações Rápidas Desktop -->
+            <div class="hidden sm:flex items-center gap-2">
+                <button onclick="openModal()" class="min-h-[42px] px-3 py-2 rounded-lg bg-[#14331E] border border-[#1A3E26] text-[#A2B8AC] hover:text-white hover:border-[#8CDB00] transition-all flex items-center gap-2 text-xs sm:text-sm" title="Visão Geral dos Slides">
+                    <i class="fa-solid fa-grip text-lime-m4u"></i>
+                    <span class="hidden lg:inline font-medium">Visão Geral</span>
+                </button>
+
+                <button onclick="downloadHTML()" class="min-h-[42px] px-3.5 py-2 rounded-lg bg-[#8CDB00] text-[#030805] font-bold hover:bg-[#a2fb00] transition-all flex items-center gap-2 text-xs sm:text-sm glow-lime" title="Baixar Guia em HTML">
+                    <i class="fa-solid fa-download"></i>
+                    <span class="hidden xl:inline">Baixar Guia</span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-3 sm:px-4 py-4 sm:py-6 w-full space-y-12 sm:space-y-16">
+
+        <!-- ================= SLIDE 1: CAPA ================= -->
+        <section id="slide1" class="slide-section rounded-2xl p-4 sm:p-8 md:p-10 min-h-[70vh] flex flex-col justify-between relative overflow-hidden shadow-2xl">
+            <!-- Background Glow Decorativo -->
+            <div class="absolute -right-20 -bottom-20 w-64 h-64 sm:w-80 sm:h-80 bg-[#8CDB00]/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <!-- Topo da Capa -->
+            <div>
+                <div class="flex flex-wrap items-center justify-between gap-2.5 mb-4 sm:mb-6">
+                    <span class="step-badge-header text-[11px] sm:text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1.5 bg-[#14331E] border border-[#8CDB00] text-[#8CDB00]">
+                        <i class="fa-solid fa-graduation-cap"></i> MÓDULO DE OPERAÇÕES E LOGÍSTICA
+                    </span>
+                    <span class="text-[11px] sm:text-xs text-[#A2B8AC] bg-[#050E08] px-2.5 py-1 rounded-full border border-[#1A3E26]">
+                        <i class="fa-solid fa-users mr-1 text-lime-m4u"></i> Operadores &amp; Franquias
+                    </span>
+                </div>
+
+                <p class="text-lime-m4u font-bold text-xs sm:text-sm tracking-widest uppercase mb-1.5">NO SEU TEMPO, DO SEU JEITO</p>
+                <h1 class="font-bebas text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-white leading-tight sm:leading-none mb-4 sm:mb-6">
+                    LANÇAMENTO DE NOTA FISCAL<br>
+                    <span class="text-lime-m4u">CD PRÓPRIO</span> (FORMATO XML)
+                </h1>
+
+                <p class="text-[#D1E0D7] text-sm sm:text-base max-w-3xl leading-relaxed mb-6">
+                    Guia prático definitivo para importação de arquivos XML no Centro de Distribuição do portal market4u. Aprenda a vincular produtos por código de barras, validar boletos e garantir o estoque correto.
+                </p>
+
+                <!-- BANNER DE PRÉ-REQUISITO OBRIGATÓRIO DA OPERAÇÃO -->
+                <div class="mb-6 p-4 sm:p-5 rounded-xl bg-[#E30613]/10 border-2 border-[#E30613] text-white flex items-start gap-3.5 shadow-xl">
+                    <div class="w-10 h-10 rounded-xl bg-[#E30613]/20 border border-[#E30613] text-[#FF5252] flex items-center justify-center text-xl flex-shrink-0 mt-0.5">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <div class="space-y-1">
+                        <h4 class="font-extrabold text-xs sm:text-sm text-[#FF5252] uppercase tracking-wider flex items-center gap-2">
+                            <span>PRÉ-REQUISITO OBRIGATÓRIO DA OPERAÇÃO</span>
+                        </h4>
+                        <p class="text-[#F0F7F2] text-xs sm:text-sm leading-relaxed">
+                            Antes de iniciar o lançamento de qualquer Nota Fiscal, certifique-se de que o <strong class="text-white underline decoration-[#FF5252] font-bold">PRODUTO</strong> e o <strong class="text-white underline decoration-[#FF5252] font-bold">FORNECEDOR</strong> já estejam devidamente <strong class="text-[#8CDB00]">CADASTRADOS E ATIVOS</strong> no sistema Market4u.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid de Objetivos Principais -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 my-2">
+                <div class="bg-inner-card p-3.5 sm:p-4 rounded-xl border border-[#1A3E26]">
+                    <div class="w-9 h-9 rounded-lg bg-[#14331E] flex items-center justify-center text-lime-m4u font-bold mb-2.5">
+                        <i class="fa-solid fa-file-code text-sm"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-xs sm:text-sm mb-1">1. Importação XML</h3>
+                    <p class="text-[11px] sm:text-xs text-[#A2B8AC]">Upload correto de notas de Mercadoria ou Patrimônio no portal.</p>
+                </div>
+
+                <div class="bg-inner-card p-3.5 sm:p-4 rounded-xl border border-[#1A3E26]">
+                    <div class="w-9 h-9 rounded-lg bg-[#14331E] flex items-center justify-center text-lime-m4u font-bold mb-2.5">
+                        <i class="fa-solid fa-barcode text-sm"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-xs sm:text-sm mb-1">2. Vínculo por EAN</h3>
+                    <p class="text-[11px] sm:text-xs text-[#A2B8AC]">Mapeamento por código de barras para integridade real do estoque.</p>
+                </div>
+
+                <div class="bg-inner-card p-3.5 sm:p-4 rounded-xl border border-[#1A3E26] sm:col-span-2 md:col-span-1">
+                    <div class="w-9 h-9 rounded-lg bg-[#14331E] flex items-center justify-center text-lime-m4u font-bold mb-2.5">
+                        <i class="fa-solid fa-receipt text-sm"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-xs sm:text-sm mb-1">3. Dados Financeiros</h3>
+                    <p class="text-[11px] sm:text-xs text-[#A2B8AC]">Conferência de boletos, formas de pagamento e datas de vencimento.</p>
+                </div>
+            </div>
+
+            <!-- Botão Iniciar Treinamento -->
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-4 border-t border-[#1A3E26]">
+                <div class="text-xs text-[#A2B8AC] text-center sm:text-left">
+                    <i class="fa-solid fa-clock text-lime-m4u mr-1"></i> Duração estimada: <strong>5 a 8 minutos</strong>
+                </div>
+
+                <a href="#slide2" onclick="goToAnchor('#slide2')" class="w-full sm:w-auto min-h-[46px] px-6 py-2.5 bg-[#8CDB00] text-[#030805] font-bold rounded-xl hover:bg-[#a2fb00] transition-all flex items-center justify-center gap-2.5 text-xs sm:text-sm glow-lime glow-lime-hover">
+                    <span>INICIAR TREINAMENTO</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+
+        <!-- ================= SLIDE 2: ACESSO E PORTAL ================= -->
+        <section id="slide2" class="slide-section rounded-2xl p-4 sm:p-6 md:p-8 space-y-5">
+            
+            <!-- Slide Header -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#1A3E26] pb-3.5">
+                <div class="flex flex-wrap items-center gap-2">
+                    <span class="px-2.5 py-1 rounded-lg bg-[#14331E] border border-[#8CDB00] text-[#8CDB00] font-bold text-[11px] sm:text-xs">
+                        ETAPA 1 DE 5 — PASSOS 1º AO 4º
+                    </span>
+                    <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-white">1. Acesso e Navegação no Portal</h2>
+                </div>
+                <span class="text-xs text-[#A2B8AC]"><i class="fa-solid fa-globe mr-1 text-lime-m4u"></i> Navegador Web</span>
+            </div>
+
+            <p class="text-xs sm:text-sm text-[#D1E0D7]">
+                Siga os <strong>4 primeiros passos</strong> na sequência abaixo para chegar até a tela de lançamento no portal:
+            </p>
+
+            <!-- Cards Grid Numérico 1 ao 4 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+                
+                <!-- Passo 1º -->
+                <div class="bg-inner-card p-4 rounded-xl border border-[#1A3E26] flex flex-col justify-between hover:border-[#8CDB00] transition-all">
+                    <div>
+                        <div class="flex items-center justify-between mb-2.5">
+                            <span class="min-w-[2.25rem] h-8 px-2 rounded-full bg-[#8CDB00] text-[#030805] font-black flex items-center justify-center text-xs flex-shrink-0">1º</span>
+                            <i class="fa-solid fa-right-to-bracket text-base text-[#A2B8AC]"></i>
+                        </div>
+                        <h4 class="font-bold text-white text-xs sm:text-sm mb-1.5">Fazer Login</h4>
+                        <p class="text-[11px] sm:text-xs text-[#A2B8AC] leading-relaxed break-words">
+                            Acesse <a href="https://app.market4u.com.br" target="_blank" class="text-lime-m4u underline font-bold">app.market4u.com.br</a> com os mesmos dados do seu app.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Passo 2º -->
+                <div class="bg-inner-card p-4 rounded-xl border border-[#1A3E26] flex flex-col justify-between hover:border-[#8CDB00] transition-all">
+                    <div>
+                        <div class="flex items-center justify-between mb-2.5">
+                            <span class="min-w-[2.25rem] h-8 px-2 rounded-full bg-[#14331E] text-lime-m4u border border-[#8CDB00] font-bold flex items-center justify-center text-xs flex-shrink-0">2º</span>
+                            <i class="fa-solid fa-bars text-base text-[#A2B8AC]"></i>
+                        </div>
+                        <h4 class="font-bold text-white text-xs sm:text-sm mb-1.5">Abrir Menu</h4>
+                        <p class="text-[11px] sm:text-xs text-[#A2B8AC] leading-relaxed">
+                            Na tela inicial, toque no ícone do <strong>Menu Principal</strong> no canto esquerdo.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Passo 3º -->
+                <div class="bg-inner-card p-4 rounded-xl border border-[#1A3E26] flex flex-col justify-between hover:border-[#8CDB00] transition-all">
+                    <div>
+                        <div class="flex items-center justify-between mb-2.5">
+                            <span class="min-w-[2.25rem] h-8 px-2 rounded-full bg-[#14331E] text-lime-m4u border border-[#8CDB00] font-bold flex items-center justify-center text-xs flex-shrink-0">3º</span>
+                            <i class="fa-solid fa-gears text-base text-lime-m4u"></i>
+                        </div>
+                        <h4 class="font-bold text-white text-xs sm:text-sm mb-1.5">"Operação"</h4>
+                        <p class="text-[11px] sm:text-xs text-[#A2B8AC] leading-relaxed">
+                            No menu lateral, selecione a opção <strong class="text-white">"Operação"</strong> (ícone de engrenagens).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Passo 4º -->
+                <div class="bg-inner-card p-4 rounded-xl border border-[#1A3E26] flex flex-col justify-between hover:border-[#8CDB00] transition-all">
+                    <div>
+                        <div class="flex items-center justify-between mb-2.5">
+                            <span class="min-w-[2.25rem] h-8 px-2 rounded-full bg-[#14331E] text-lime-m4u border border-[#8CDB00] font-bold flex items-center justify-center text-xs flex-shrink-0">4º</span>
+                            <i class="fa-solid fa-truck-ramp-box text-base text-[#A2B8AC]"></i>
+                        </div>
+                        <h4 class="font-bold text-white text-xs sm:text-sm mb-1.5">Remessas</h4>
+                        <p class="text-[11px] sm:text-xs text-[#A2B8AC] leading-relaxed">
+                            Clique em <strong class="text-white">"Remessas / Ordem de compras"</strong> para ver a lista.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Caixa de Dica Prática -->
+            <div class="p-3.5 rounded-xl bg-[#14331E]/60 border border-[#10B981] flex items-start gap-2.5">
+                <i class="fa-solid fa-lightbulb text-lime-m4u text-base mt-0.5 flex-shrink-0"></i>
+                <div class="text-[11px] sm:text-xs leading-relaxed">
+                    <strong class="text-white block mb-0.5">Lembrete dos Passos 1º ao 4º:</strong>
+                    Após o 4º passo, você estará na tela principal de ordens de compra e remessas, pronto para importar o arquivo XML no próximo slide.
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ================= SLIDE 3: SELEÇÃO DO CD E XML ================= -->
+        <section id="slide3" class="slide-section rounded-2xl p-4 sm:p-6 md:p-8 space-y-5">
+            
+            <!-- Slide Header -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#1A3E26] pb-3.5">
+                <div class="flex flex-wrap items-center gap-2">
+                    <span class="px-2.5 py-1 rounded-lg bg-[#14331E] border border-[#8CDB00] text-[#8CDB00] font-bold text-[11px] sm:text-xs">
+                        ETAPA 2 DE 5 — PASSOS 5º AO 10º
+                    </span>
+                    <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-white">2. Seleção do CD &amp; Importação do XML</h2>
+                </div>
+                <span class="text-xs text-[#A2B8AC]"><i class="fa-solid fa-file-code mr-1 text-lime-m4u"></i> Arquivo .XML</span>
+            </div>
+
+            <!-- Passos 5 ao 10 em Formato Sequencial -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+                
+                <!-- Lado Esquerdo: Sequência dos Passos 5 a 10 -->
+                <div class="space-y-2.5">
+                    <h3 class="text-xs sm:text-sm font-bold text-lime-m4u uppercase tracking-wider flex items-center gap-2">
+                        <i class="fa-solid fa-list-ol"></i> Sequência Direta dos Passos
+                    </h3>
+
+                    <div class="space-y-2 text-xs">
+                        <div class="bg-inner-card p-3 rounded-lg border border-[#1A3E26] flex items-center gap-2.5">
+                            <span class="font-black text-[#030805] bg-[#8CDB00] px-2 py-0.5 rounded-full text-xs flex-shrink-0">5º</span>
+                            <span class="text-white">Na tela de remessas, clique no botão <strong class="text-lime-m4u">"Adicionar"</strong>.</span>
+                        </div>
+
+                        <div class="bg-inner-card p-3 rounded-lg border border-[#1A3E26] flex items-center gap-2.5">
+                            <span class="font-bold text-lime-m4u px-2 py-0.5 bg-[#14331E] rounded-full border border-[#1A3E26] text-xs flex-shrink-0">6º</span>
+                            <span class="text-white">Selecione a opção <strong class="text-lime-m4u">"Importar Nota Fiscal"</strong>.</span>
+                        </div>
+
+                        <div class="bg-inner-card p-3 rounded-lg border border-[#1A3E26] flex items-center gap-2.5">
+                            <span class="font-bold text-lime-m4u px-2 py-0.5 bg-[#14331E] rounded-full border border-[#1A3E26] text-xs flex-shrink-0">7º</span>
+                            <span class="text-white">Clique no campo identificado como <strong class="text-lime-m4u">"CD"</strong>.</span>
+                        </div>
+
+                        <div class="bg-inner-card p-3 rounded-lg border border-[#1A3E26] flex items-center gap-2.5">
+                            <span class="font-bold text-lime-m4u px-2 py-0.5 bg-[#14331E] rounded-full border border-[#1A3E26] text-xs flex-shrink-0">8º</span>
+                            <span class="text-white">Selecione o <strong>Centro de Distribuição correto</strong>.</span>
+                        </div>
+
+                        <div class="bg-inner-card p-3 rounded-lg border border-[#1A3E26] flex items-center gap-2.5">
+                            <span class="font-bold text-lime-m4u px-2 py-0.5 bg-[#14331E] rounded-full border border-[#1A3E26] text-xs flex-shrink-0">9º</span>
+                            <span class="text-white">Em <strong>"Escolher Arquivo"</strong>, selecione o <strong>XML</strong> da NF.</span>
+                        </div>
+
+                        <div class="bg-inner-card p-3 rounded-lg border border-[#1A3E26] flex items-center gap-2.5">
+                            <span class="font-bold text-lime-m4u px-2 py-0.5 bg-[#14331E] rounded-full border border-[#1A3E26] text-xs flex-shrink-0">10º</span>
+                            <span class="text-white">Clique no botão <strong class="text-lime-m4u">"Salvar"</strong> para importar.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lado Direito: Regra Crucial do Passo 8º e Atenção do Passo 10º -->
+                <div class="space-y-3">
+                    <h3 class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2">
+                        <i class="fa-solid fa-circle-info text-lime-m4u"></i> Regras Importantes
+                    </h3>
+
+                    <!-- Regra do Passo 8.1º -->
+                    <div class="p-3.5 rounded-xl bg-inner-card border-l-4 border-l-[#8CDB00] border border-[#1A3E26] space-y-2">
+                        <div class="flex items-center gap-2">
+                            <span class="text-[10px] font-bold bg-[#14331E] text-lime-m4u px-2 py-0.5 rounded border border-[#8CDB00]">8.1º</span>
+                            <h4 class="font-bold text-white text-xs sm:text-sm">Regra do Tipo de CD</h4>
+                        </div>
+                        <ul class="text-[11px] sm:text-xs text-[#A2B8AC] space-y-1.5 leading-relaxed">
+                            <li>• <strong class="text-white">CD de Mercadorias:</strong> Produtos alimentícios e itens vendidos no PDX.</li>
+                            <li>• <strong class="text-white">CD de Patrimônios:</strong> Bens do PDX (geladeiras, gôndolas, prateleiras).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Alerta do Passo 10.1º -->
+                    <div class="p-3.5 rounded-xl bg-[#E30613]/10 border border-[#E30613] text-[#FF5252] flex items-start gap-2.5">
+                        <i class="fa-solid fa-triangle-exclamation text-base mt-0.5 flex-shrink-0"></i>
+                        <div class="text-[11px] sm:text-xs leading-relaxed">
+                            <strong class="block text-white font-bold mb-0.5">10.1º — Status "NOVA":</strong>
+                            Após clicar em Salvar, a NF é importada com o status <span class="underline font-bold">"NOVA"</span>. Ela ainda NÃO está finalizada! É necessário prosseguir para o Passo 11º.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SLIDE 4: DADOS FINANCEIROS ================= -->
+        <section id="slide4" class="slide-section rounded-2xl p-4 sm:p-6 md:p-8 space-y-5">
+            
+            <!-- Slide Header -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#1A3E26] pb-3.5">
+                <div class="flex flex-wrap items-center gap-2">
+                    <span class="px-2.5 py-1 rounded-lg bg-[#14331E] border border-[#8CDB00] text-[#8CDB00] font-bold text-[11px] sm:text-xs">
+                        ETAPA 3 DE 5 — PASSOS 11º AO 13º
+                    </span>
+                    <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-white">3. Dados de Recebimento &amp; Financeiro</h2>
+                </div>
+                <span class="text-xs text-[#A2B8AC]"><i class="fa-solid fa-calculator mr-1 text-lime-m4u"></i> Edição da Nota</span>
+            </div>
+
+            <!-- Passos 11º, 12º e 13º -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4">
+                
+                <!-- Recebimento -->
+                <div class="bg-inner-card p-4 rounded-xl border border-[#1A3E26] space-y-2.5">
+                    <div class="flex items-center gap-2">
+                        <span class="min-w-[2.25rem] h-8 px-2 rounded-full bg-[#8CDB00] text-[#030805] font-black text-xs flex-shrink-0 flex items-center justify-center">11º &amp; 12º</span>
+                        <h3 class="font-bold text-white text-xs sm:text-sm">Recebimento</h3>
+                    </div>
+
+                    <p class="text-[11px] sm:text-xs text-[#A2B8AC] leading-relaxed">
+                        Abra a Nota Fiscal e preencha o campo <strong class="text-white">"Data do Recebimento"</strong>.
+                    </p>
+
+                    <div class="p-2.5 bg-[#050E08] rounded-lg border border-[#1A3E26] text-[11px] text-[#D1E0D7]">
+                        <strong class="text-lime-m4u block mb-0.5">12.1º (Regra de Data):</strong>
+                        Se a compra foi feita presencialmente, informe a <strong>data da própria compra</strong>.
+                    </div>
+                </div>
+
+                <!-- Vencimento -->
+                <div class="bg-inner-card p-4 rounded-xl border border-[#1A3E26] space-y-2.5">
+                    <div class="flex items-center gap-2">
+                        <span class="min-w-[2.25rem] h-8 px-2 rounded-full bg-[#14331E] text-lime-m4u border border-[#8CDB00] font-bold text-xs flex-shrink-0 flex items-center justify-center">13.1º</span>
+                        <h3 class="font-bold text-white text-xs sm:text-sm">Vencimento</h3>
+                    </div>
+
+                    <ul class="text-[11px] sm:text-xs space-y-1.5 text-[#A2B8AC]">
+                        <li class="flex items-start gap-1.5 bg-[#050E08] p-2 rounded">
+                            <i class="fa-solid fa-money-bill-wave text-lime-m4u mt-0.5 flex-shrink-0"></i>
+                            <span><strong class="text-white">Débito/Dinheiro/PIX:</strong> Data da compra.</span>
+                        </li>
+                        <li class="flex items-start gap-1.5 bg-[#050E08] p-2 rounded">
+                            <i class="fa-solid fa-credit-card text-sky-400 mt-0.5 flex-shrink-0"></i>
+                            <span><strong class="text-white">Cartão de Crédito:</strong> Vencimento da fatura.</span>
+                        </li>
+                        <li class="flex items-start gap-1.5 bg-[#050E08] p-2 rounded">
+                            <i class="fa-solid fa-barcode text-amber-400 mt-0.5 flex-shrink-0"></i>
+                            <span><strong class="text-white">Boleto Bancário:</strong> Vencimento do boleto.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Observação -->
+                <div class="bg-inner-card p-4 rounded-xl border border-[#1A3E26] space-y-2.5">
+                    <div class="flex items-center gap-2">
+                        <span class="min-w-[2.25rem] h-8 px-2 rounded-full bg-[#14331E] text-lime-m4u border border-[#8CDB00] font-bold text-xs flex-shrink-0 flex items-center justify-center">13.2º</span>
+                        <h3 class="font-bold text-white text-xs sm:text-sm">Observação</h3>
+                    </div>
+
+                    <div class="space-y-1.5 text-[11px] sm:text-xs">
+                        <div class="p-2 bg-[#050E08] rounded border border-[#1A3E26]">
+                            <strong class="text-white block">À Vista / Cartão:</strong>
+                            <p class="text-[#A2B8AC]">Descreva: <span class="text-lime-m4u font-mono">"Compra no dinheiro"</span> ou <span class="text-lime-m4u font-mono">"Pago via PIX"</span>.</p>
+                        </div>
+
+                        <div class="p-2 bg-[#050E08] rounded border border-[#1A3E26]">
+                            <strong class="text-white block">Boleto:</strong>
+                            <p class="text-[#A2B8AC]">Cole a <strong>linha digitável / código de barras</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SLIDE 5: CÓDIGO DE BARRAS E ESTOQUE ================= -->
+        <section id="slide5" class="slide-section rounded-2xl p-4 sm:p-6 md:p-8 space-y-5">
+            
+            <!-- Slide Header -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#1A3E26] pb-3.5">
+                <div class="flex flex-wrap items-center gap-2">
+                    <span class="px-2.5 py-1 rounded-lg bg-[#14331E] border border-[#8CDB00] text-[#8CDB00] font-bold text-[11px] sm:text-xs">
+                        ETAPA 4 DE 5 — PASSOS 14º E 15º
+                    </span>
+                    <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-white">4. Aba Produtos &amp; Código de Barras</h2>
+                </div>
+                <span class="text-[11px] text-[#E30613] font-bold bg-[#E30613]/10 px-2 py-0.5 rounded border border-[#E30613] w-max">
+                    <i class="fa-solid fa-barcode mr-1"></i> CRÍTICO PARA ESTOQUE
+                </span>
+            </div>
+
+            <!-- Explicação Passo 14º -->
+            <div class="bg-inner-card p-4 sm:p-5 rounded-xl border border-[#1A3E26] space-y-3">
+                <h3 class="font-bold text-white text-xs sm:text-sm flex items-center gap-2">
+                    <i class="fa-solid fa-boxes-stacked text-lime-m4u"></i>
+                    Aba "Produtos" — Conferência e Vínculo (Passos 14º)
+                </h3>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 pt-1">
+                    
+                    <!-- 14.1 EAN -->
+                    <div class="p-3 bg-[#050E08] rounded-xl border border-[#1A3E26] space-y-1.5">
+                        <div class="flex items-center gap-2 text-lime-m4u font-bold text-xs">
+                            <span class="px-2 py-0.5 rounded bg-[#14331E] text-lime-m4u font-bold text-xs border border-[#8CDB00] flex-shrink-0">14.1º</span>
+                            <span>CÓDIGO DE BARRAS</span>
+                        </div>
+                        <p class="text-[11px] sm:text-xs text-[#D1E0D7] leading-relaxed">
+                            Na coluna "Produto", insira o <strong>código de barras (EAN)</strong> na linha de cada item.
+                        </p>
+                    </div>
+
+                    <!-- 14.2 Quantidade -->
+                    <div class="p-3 bg-[#050E08] rounded-xl border border-[#1A3E26] space-y-1.5">
+                        <div class="flex items-center gap-2 text-lime-m4u font-bold text-xs">
+                            <span class="px-2 py-0.5 rounded bg-[#14331E] text-lime-m4u font-bold text-xs border border-[#8CDB00] flex-shrink-0">14.2º</span>
+                            <span>CONFERIR QUANTIDADE</span>
+                        </div>
+                        <p class="text-[11px] sm:text-xs text-[#D1E0D7] leading-relaxed">
+                            Confira a coluna <strong class="text-white">"Qtde (Un)"</strong> com a entrega física.
+                        </p>
+                    </div>
+
+                    <!-- 14.3 Variação -->
+                    <div class="p-3 bg-[#050E08] rounded-xl border border-[#1A3E26] space-y-1.5 sm:col-span-2 lg:col-span-1">
+                        <div class="flex items-center gap-2 text-lime-m4u font-bold text-xs">
+                            <span class="px-2 py-0.5 rounded bg-[#14331E] text-lime-m4u font-bold text-xs border border-[#8CDB00] flex-shrink-0">14.3º</span>
+                            <span>VARIAÇÃO DE CUSTO</span>
+                        </div>
+                        <p class="text-[11px] sm:text-xs text-[#D1E0D7] leading-relaxed">
+                            Verifique a coluna <strong class="text-white">"Variação"</strong> em relação ao custo anterior.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Passo 15º Em Destaque -->
+            <div class="p-4 rounded-xl bg-[#14331E] border-2 border-[#8CDB00] text-white flex items-start gap-3 shadow-lg">
+                <div class="min-w-[2.25rem] h-8 px-2 rounded-full bg-[#8CDB00] text-[#030805] flex items-center justify-center font-black text-xs flex-shrink-0">
+                    15º
+                </div>
+                <div class="text-xs space-y-0.5">
+                    <h4 class="font-bold text-xs sm:text-sm text-[#8CDB00] uppercase tracking-wide">
+                        Reconfirmação Obrigatória do Vínculo
+                    </h4>
+                    <p class="text-[#F0F7F2] text-[11px] sm:text-xs leading-relaxed">
+                        Confira a coluna <strong class="text-white">"Produto"</strong> para ter certeza de que todos os itens possuem código de barras. Sem isso, o item não entra no estoque.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ================= SLIDE 6: SALVAMENTO E CONCLUSÃO ================= -->
+        <section id="slide6" class="slide-section rounded-2xl p-4 sm:p-6 md:p-8 space-y-5">
+            
+            <!-- Slide Header -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#1A3E26] pb-3.5">
+                <div class="flex flex-wrap items-center gap-2">
+                    <span class="px-2.5 py-1 rounded-lg bg-[#14331E] border border-[#8CDB00] text-[#8CDB00] font-bold text-[11px] sm:text-xs">
+                        ETAPA 5 DE 5 — PASSOS 16º AO 18º
+                    </span>
+                    <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-white">5. Salvamento &amp; Conclusão</h2>
+                </div>
+                <span class="text-xs text-[#8CDB00] bg-[#14331E] px-2.5 py-1 rounded border border-[#1A3E26] w-max">
+                    <i class="fa-solid fa-flag-checkered mr-1"></i> Passos Finais
+                </span>
+            </div>
+
+            <!-- Grid Passos 16º, 17º e 18º -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4">
+                
+                <!-- Passo 16º -->
+                <div class="bg-inner-card p-4 rounded-xl border border-[#1A3E26] space-y-2">
+                    <div class="flex items-center gap-2">
+                        <span class="min-w-[2.25rem] h-8 px-2 rounded-full bg-[#14331E] text-lime-m4u border border-[#8CDB00] font-bold flex items-center justify-center text-xs flex-shrink-0">16º</span>
+                        <h3 class="font-bold text-white text-xs sm:text-sm">Primeiro Salvar</h3>
+                    </div>
+                    <p class="text-[11px] sm:text-xs text-[#A2B8AC] leading-relaxed">
+                        Após preencher datas, pagamentos e produtos, clique em <strong class="text-lime-m4u">"Salvar"</strong>.
+                    </p>
+                </div>
+
+                <!-- Passo 17º -->
+                <div class="bg-inner-card p-4 rounded-xl border border-[#1A3E26] space-y-2">
+                    <div class="flex items-center gap-2">
+                        <span class="min-w-[2.25rem] h-8 px-2 rounded-full bg-[#F59E0B] text-[#030805] font-black flex items-center justify-center text-xs flex-shrink-0">17º</span>
+                        <h3 class="font-bold text-white text-xs sm:text-sm">Reabrir e Checar</h3>
+                    </div>
+                    <p class="text-[11px] sm:text-xs text-[#A2B8AC] leading-relaxed">
+                        A NF continuará como <strong class="text-amber-400">"Nova"</strong>. Abra-a novamente para a conferência final.
+                    </p>
+                </div>
+
+                <!-- Passo 18º -->
+                <div class="bg-inner-card p-4 rounded-xl border border-lime-highlight space-y-2 bg-gradient-to-b from-[#0C1E12] to-[#14331E]">
+                    <div class="flex items-center gap-2">
+                        <span class="min-w-[2.25rem] h-8 px-2 rounded-full bg-[#8CDB00] text-[#030805] font-black flex items-center justify-center text-xs flex-shrink-0">18º</span>
+                        <h3 class="font-bold text-white text-xs sm:text-sm">Clicar em "Concluir"</h3>
+                    </div>
+                    <p class="text-[11px] sm:text-xs text-[#D1E0D7] leading-relaxed">
+                        No topo, clique em <strong class="text-lime-m4u uppercase">"CONCLUIR"</strong>.
+                    </p>
+                    <div class="p-2 bg-[#030805] rounded text-[10px] text-lime-m4u border border-[#8CDB00]">
+                        <i class="fa-solid fa-check-double mr-1"></i> <strong>18.1º:</strong> O botão "Concluir" só aparece após salvar no Passo 16º!
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SLIDE 7: RESUMO E CHECKLIST FINAL ================= -->
+        <section id="slide7" class="slide-section rounded-2xl p-4 sm:p-8 md:p-10 space-y-6">
+            
+            <div class="text-center max-w-2xl mx-auto space-y-2">
+                <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#8CDB00]/20 border-2 border-[#8CDB00] text-[#8CDB00] flex items-center justify-center mx-auto text-2xl sm:text-3xl glow-lime">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h2 class="font-bebas text-3xl sm:text-4xl md:text-5xl text-white">REVISÃO CONCLUÍDA!</h2>
+                <p class="text-xs sm:text-sm text-[#D1E0D7]">
+                    Utilize este checklist diário para garantir que nenhum dos 18 passos foi esquecido.
+                </p>
+            </div>
+
+            <!-- Checklist Interativo -->
+            <div class="bg-inner-card p-4 sm:p-6 rounded-2xl border border-[#1A3E26] max-w-3xl mx-auto space-y-3">
+                <h3 class="font-bold text-white text-xs sm:text-sm uppercase tracking-wider flex items-center gap-2 border-b border-[#1A3E26] pb-2.5">
+                    <i class="fa-solid fa-square-check text-lime-m4u"></i> Checklist dos 18 Passos
+                </h3>
+
+                <div class="space-y-2 text-xs">
+                    <label class="flex items-start gap-2.5 p-2.5 bg-[#050E08] rounded-xl border border-[#1A3E26] cursor-pointer hover:border-[#8CDB00] transition-colors">
+                        <input type="checkbox" class="w-4 h-4 mt-0.5 accent-[#8CDB00] rounded flex-shrink-0">
+                        <span class="text-[#D1E0D7] text-[11px] sm:text-xs"><strong>Pré-requisito:</strong> Confirmei se produto e fornecedor estão previamente cadastrados e ativos.</span>
+                    </label>
+
+                    <label class="flex items-start gap-2.5 p-2.5 bg-[#050E08] rounded-xl border border-[#1A3E26] cursor-pointer hover:border-[#8CDB00] transition-colors">
+                        <input type="checkbox" class="w-4 h-4 mt-0.5 accent-[#8CDB00] rounded flex-shrink-0">
+                        <span class="text-[#D1E0D7] text-[11px] sm:text-xs"><strong>Passos 1º a 4º:</strong> Acessei o portal, menu Operação e Remessas.</span>
+                    </label>
+
+                    <label class="flex items-start gap-2.5 p-2.5 bg-[#050E08] rounded-xl border border-[#1A3E26] cursor-pointer hover:border-[#8CDB00] transition-colors">
+                        <input type="checkbox" class="w-4 h-4 mt-0.5 accent-[#8CDB00] rounded flex-shrink-0">
+                        <span class="text-[#D1E0D7] text-[11px] sm:text-xs"><strong>Passos 5º a 10º:</strong> Importei o XML no CD correto e salvei.</span>
+                    </label>
+
+                    <label class="flex items-start gap-2.5 p-2.5 bg-[#050E08] rounded-xl border border-[#1A3E26] cursor-pointer hover:border-[#8CDB00] transition-colors">
+                        <input type="checkbox" class="w-4 h-4 mt-0.5 accent-[#8CDB00] rounded flex-shrink-0">
+                        <span class="text-[#D1E0D7] text-[11px] sm:text-xs"><strong>Passos 11º a 13º:</strong> Preenchi recebimento, vencimento e boleto.</span>
+                    </label>
+
+                    <label class="flex items-start gap-2.5 p-2.5 bg-[#050E08] rounded-xl border border-[#1A3E26] cursor-pointer hover:border-[#8CDB00] transition-colors">
+                        <input type="checkbox" class="w-4 h-4 mt-0.5 accent-[#8CDB00] rounded flex-shrink-0">
+                        <span class="text-[#D1E0D7] text-[11px] sm:text-xs"><strong>Passos 14º e 15º:</strong> Vinculei o código de barras (EAN) e conferi quantidades.</span>
+                    </label>
+
+                    <label class="flex items-start gap-2.5 p-2.5 bg-[#050E08] rounded-xl border border-[#1A3E26] cursor-pointer hover:border-[#8CDB00] transition-colors">
+                        <input type="checkbox" class="w-4 h-4 mt-0.5 accent-[#8CDB00] rounded flex-shrink-0">
+                        <span class="text-[#D1E0D7] text-[11px] sm:text-xs"><strong>Passos 16º a 18º:</strong> Salvei, reabri para conferir e cliquei em <strong>"Concluir"</strong>.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Botões de Ação Final -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+                <a href="#slide1" onclick="goToAnchor('#slide1')" class="w-full sm:w-auto min-h-[44px] px-5 py-2.5 bg-[#14331E] border border-[#1A3E26] text-white font-bold rounded-xl hover:border-[#8CDB00] transition-all flex items-center justify-center gap-2 text-xs sm:text-sm">
+                    <i class="fa-solid fa-arrow-rotate-left text-lime-m4u"></i>
+                    <span>VOLTAR AO INÍCIO</span>
+                </a>
+
+                <button onclick="downloadHTML()" class="w-full sm:w-auto min-h-[44px] px-6 py-2.5 bg-[#8CDB00] text-[#030805] font-bold rounded-xl hover:bg-[#a2fb00] transition-all flex items-center justify-center gap-2 text-xs sm:text-sm glow-lime">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                    <span>BAIXAR CÓPIA LOCAL (HTML)</span>
+                </button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="mt-12 bg-[#050E08] border-t border-[#1A3E26] py-5 px-4 text-center text-[11px] sm:text-xs text-[#A2B8AC]">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-store text-lime-m4u"></i>
+                <span class="font-bold text-white">market<span class="text-lime-m4u">4u</span></span>
+                <span>— Guia Sequencial (Passos 1º ao 18º)</span>
+            </div>
+            <p>Sistemas de Treinamento e Operações de Campo © 2026</p>
+        </div>
+    </footer>
+
+
+    <!-- ================= MODAL VISÃO GERAL ================= -->
+    <div id="overviewModal" class="fixed inset-0 z-50 modal-overlay hidden items-center justify-center p-3 sm:p-4">
+        <div class="bg-[#06120A] border border-[#1A3E26] rounded-2xl p-4 sm:p-6 max-w-4xl w-full max-h-[90vh] overflow-y-auto space-y-4 shadow-2xl">
+            
+            <div class="flex items-center justify-between border-b border-[#1A3E26] pb-3">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-grip text-lime-m4u text-base sm:text-lg"></i>
+                    <h3 class="text-sm sm:text-lg font-bold text-white">Visão Geral dos Slides</h3>
+                </div>
+                <button onclick="closeModal()" class="w-8 h-8 rounded-lg bg-[#14331E] text-[#A2B8AC] hover:text-white border border-[#1A3E26] flex items-center justify-center" title="Fechar">
+                    <i class="fa-solid fa-xmark text-base"></i>
+                </button>
+            </div>
+
+            <!-- Grid de Atalhos -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
+                
+                <button onclick="goToAnchor('#slide1'); closeModal();" class="p-3 rounded-xl bg-inner-card border border-[#1A3E26] hover:border-[#8CDB00] text-left transition-all">
+                    <span class="text-[10px] text-lime-m4u font-bold block">SLIDE 01</span>
+                    <h4 class="font-bold text-white text-xs">01. Capa &amp; Pré-Requisitos</h4>
+                    <p class="text-[11px] text-[#A2B8AC]">Regras obrigatórias e visão geral.</p>
+                </button>
+
+                <button onclick="goToAnchor('#slide2'); closeModal();" class="p-3 rounded-xl bg-inner-card border border-[#1A3E26] hover:border-[#8CDB00] text-left transition-all">
+                    <span class="text-[10px] text-lime-m4u font-bold block">SLIDE 02 — ETAPA 1</span>
+                    <h4 class="font-bold text-white text-xs">02. Passos 1º ao 4º</h4>
+                    <p class="text-[11px] text-[#A2B8AC]">Acesso ao portal e menu.</p>
+                </button>
+
+                <button onclick="goToAnchor('#slide3'); closeModal();" class="p-3 rounded-xl bg-inner-card border border-[#1A3E26] hover:border-[#8CDB00] text-left transition-all">
+                    <span class="text-[10px] text-lime-m4u font-bold block">SLIDE 03 — ETAPA 2</span>
+                    <h4 class="font-bold text-white text-xs">03. Passos 5º ao 10º</h4>
+                    <p class="text-[11px] text-[#A2B8AC]">Seleção CD e upload XML.</p>
+                </button>
+
+                <button onclick="goToAnchor('#slide4'); closeModal();" class="p-3 rounded-xl bg-inner-card border border-[#1A3E26] hover:border-[#8CDB00] text-left transition-all">
+                    <span class="text-[10px] text-lime-m4u font-bold block">SLIDE 04 — ETAPA 3</span>
+                    <h4 class="font-bold text-white text-xs">04. Passos 11º ao 13º</h4>
+                    <p class="text-[11px] text-[#A2B8AC]">Datas e dados financeiros.</p>
+                </button>
+
+                <button onclick="goToAnchor('#slide5'); closeModal();" class="p-3 rounded-xl bg-inner-card border border-[#1A3E26] hover:border-[#8CDB00] text-left transition-all">
+                    <span class="text-[10px] text-lime-m4u font-bold block">SLIDE 05 — ETAPA 4</span>
+                    <h4 class="font-bold text-white text-xs">05. Passos 14º e 15º</h4>
+                    <p class="text-[11px] text-[#A2B8AC]">Código de barras (EAN).</p>
+                </button>
+
+                <button onclick="goToAnchor('#slide6'); closeModal();" class="p-3 rounded-xl bg-inner-card border border-[#1A3E26] hover:border-[#8CDB00] text-left transition-all">
+                    <span class="text-[10px] text-lime-m4u font-bold block">SLIDE 06 — ETAPA 5</span>
+                    <h4 class="font-bold text-white text-xs">06. Passos 16º ao 18º</h4>
+                    <p class="text-[11px] text-[#A2B8AC]">Salvamento e conclusão.</p>
+                </button>
+
+                <button onclick="goToAnchor('#slide7'); closeModal();" class="p-3 rounded-xl bg-inner-card border border-[#1A3E26] hover:border-[#8CDB00] text-left transition-all sm:col-span-2 md:col-span-3">
+                    <span class="text-[10px] text-lime-m4u font-bold block">SLIDE 07 — RESUMO</span>
+                    <h4 class="font-bold text-white text-xs">07. Checklist do 1º ao 18º Passo</h4>
+                    <p class="text-[11px] text-[#A2B8AC]">Conferência completa diária.</p>
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        const slides = ['#slide1', '#slide2', '#slide3', '#slide4', '#slide5', '#slide6', '#slide7'];
+
+        function goToAnchor(hash) {
+            if (!hash) return;
+            const targetElement = document.querySelector(hash);
+            if (targetElement) {
+                location.href = hash;
+                updateDropdown(hash);
+            }
+        }
+
+        function navigateSlide(direction) {
+            const currentHash = window.location.hash || '#slide1';
+            let currentIndex = slides.indexOf(currentHash);
+            
+            if (currentIndex === -1) currentIndex = 0;
+
+            let newIndex = currentIndex + direction;
+            if (newIndex >= 0 && newIndex < slides.length) {
+                goToAnchor(slides[newIndex]);
+            }
+        }
+
+        function updateDropdown(hash) {
+            const select = document.getElementById('slideSelect');
+            if (select && hash) {
+                select.value = hash;
+            }
+        }
+
+        function openModal() {
+            const modal = document.getElementById('overviewModal');
+            if (modal) {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            }
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('overviewModal');
+            if (modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowRight') {
+                navigateSlide(1);
+            } else if (event.key === 'ArrowLeft') {
+                navigateSlide(-1);
+            } else if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '-20% 0px -50% 0px',
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = '#' + entry.target.id;
+                        updateDropdown(id);
+                        history.replaceState(null, null, id);
+                    }
+                });
+            }, observerOptions);
+
+            slides.forEach(slideId => {
+                const element = document.querySelector(slideId);
+                if (element) observer.observe(element);
+            });
+        });
+
+        function downloadHTML() {
+            try {
+                const htmlContent = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+                const blob = new Blob([htmlContent], { type: "text/html;charset=utf-8" });
+                const url = URL.createObjectURL(blob);
+                
+                const tempLink = document.createElement("a");
+                tempLink.href = url;
+                tempLink.download = "Guia_Lancamento_NF_CD_market4u.html";
+                document.body.appendChild(tempLink);
+                tempLink.click();
+                document.body.removeChild(tempLink);
+                
+                setTimeout(() => URL.revokeObjectURL(url), 100);
+            } catch (err) {
+                console.error("Erro ao gerar download:", err);
+            }
+        }
+    </script>
+
+
+</body></html>
